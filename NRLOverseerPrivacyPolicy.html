@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | NRL Overseer</title>
+    <style>
+        :root {
+            --bg-main: #0B0E11; /* Midnight Stadium Black */
+            --bg-card: #13171C; /* Command Center Dark Slate */
+            --border-steel: #222B35; /* Steel Gridiron Framing */
+            --text-pure: #FFFFFF;
+            --text-muted: #8A99A8; /* Analytics Slate Gray */
+            
+            /* NRL Theme Core Palette */
+            --nrl-primary: #34495E; /* Gridiron Charcoal */
+            --nrl-green: #2ECC71; /* Turf Green Accent */
+            --nrl-red: #C0392B; /* Disciplinary Penalty Red */
+            --nrl-gold: #D4AF37; /* Marquee Championship Gold */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+            padding: 60px 20px;
+            background-image: 
+                linear-gradient(rgba(46, 204, 113, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(46, 204, 113, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px; /* Subtle field grid overlay effect */
+        }
+
+        .tos-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid var(--border-steel);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top Stadium Accent Bar */
+        .tos-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--nrl-primary) 0%, var(--nrl-green) 50%, var(--nrl-gold) 100%);
+        }
+
+        .header-area {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--text-pure);
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(46, 204, 113, 0.1);
+            color: var(--nrl-green);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid rgba(46, 204, 113, 0.2);
+        }
+
+        h2 {
+            color: var(--text-pure);
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '//';
+            color: var(--nrl-green);
+            font-family: monospace;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 0 20px 0;
+        }
+
+        ul {
+            margin: 0 0 25px 0;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 12px;
+            padding-left: 15px;
+        }
+
+        li::before {
+            content: '🏈';
+            position: absolute;
+            left: -10px;
+            top: 2px;
+            font-size: 0.85rem;
+        }
+
+        strong {
+            color: var(--text-pure);
+            font-weight: 600;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--border-steel);
+            margin: 35px 0;
+        }
+
+        /* Callout Box - Secure Storage Level */
+        .notice-panel {
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.03) 0%, rgba(19, 23, 28, 0) 100%);
+            border-left: 4px solid var(--nrl-green);
+            padding: 25px;
+            margin: 35px 0;
+            border-radius: 0 8px 8px 0;
+            border-top: 1px solid rgba(46, 204, 113, 0.1);
+            border-right: 1px solid rgba(46, 204, 113, 0.1);
+            border-bottom: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .notice-panel h3 {
+            margin: 0 0 12px 0;
+            color: var(--nrl-green);
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .notice-panel ul li::before {
+            content: '🔒';
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-steel);
+            font-size: 0.85rem;
+            color: #526375;
+            font-weight: 500;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-main);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-steel);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--nrl-primary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="tos-wrapper">
+    <div class="header-area">
+        <h1>Privacy Policy</h1>
+        <div class="badge">NRL Overseer Data Protection & Security Protocol</div>
+    </div>
+
+    <p>This Document outlines the strict telemetry logging constraints, storage mechanics, and data protection practices maintained by the <strong>NRL Overseer</strong> platform. We operate with a policy of minimal data collection, tracking only what is fundamentally critical to calculate player statistics, manage league franchises, and enforce organizational rosters.</p>
+    
+    <hr>
+
+    <h2>1. Data Vector Collection Layout</h2>
+    <p>NRL Overseer programmatically interacts with specific public profile layers to compile system dashboards. The vectors mapped into our backend include:</p>
+    <ul>
+        <li><strong>Discord Platform Identifiers:</strong> Unique Snowflake IDs, usernames, server channel settings, custom team role configurations, and avatar image metadata handles.</li>
+        <li><strong>Roblox Identity Parameters:</strong> Roblox usernames and corresponding numeric account User IDs, isolated strictly via authorized third-party verification webhooks (e.g., Bloxlink API synchronization).</li>
+        <li><strong>Performance Telemetry Metrics:</strong> Stat tracking logs parsed directly from official in-game match file uploads (.json/.txt files). This includes player passing, rushing, receiving, kicking, and defensive scoring histories.</li>
+        <li><strong>Transactional Records:</strong> Transaction routing structures (logs verifying commercial package activation codes) are recorded for ledger accuracy. Raw credit card numbers or account authentication details are never collected or seen by our systems.</li>
+    </ul>
+
+    <h2>2. Processing Channels & Information Utilization</h2>
+    <p>Data maps are isolated and restricted to the following automated system loops:</p>
+    <ul>
+        <li>Generating real-time leaderboard positions, division standings charts, and career telemetry profiles.</li>
+        <li>Processing dynamic team rosters, staff claims, trade confirmations, and automated contract validations.</li>
+        <li>Routing administrative workflows, such as private design support tickets and contextual score parsing channels.</li>
+        <li>Synthesizing game-day recaps and press releases through completely sandboxed narrative queries utilizing client-funded, isolated token credentials.</li>
+    </ul>
+
+    <div class="notice-panel">
+        <h3>🔒 Non-Local Secure Infrastructure Matrix</h3>
+        <p>NRL Overseer operates strictly out of dedicated Virtual Private Server (VPS) environments built upon hard-hardened production server baselines.</p>
+        <ul>
+            <li><strong>Atomic Replication Sweeps:</strong> To guarantee absolute security against local machine failures or environment drops, all active data layers cycle through automated backup engines exactly every <strong>15 minutes</strong>, mirroring primary production documents to secure cloud storage partitions.</li>
+            <li><strong>Zero Credential Storage:</strong> The codebase contains no components capable of harvesting or recording account passwords, private encryption arrays, or financial payment authorization tokens.</li>
+        </ul>
+    </div>
+
+    <h2>3. Information Distribution & Third-Party Disclosure</h2>
+    <p>Data maps are highly protected assets. Your league registries, player performance matrix rows, and historical document parameters are handled under the following strict boundaries:</p>
+    <ul>
+        <li><strong>No External Monetization:</strong> Compiled telemetry arrays, usernames, and organization indices are **never** sold, rented, or distributed to outside analytics agencies or third-party marketing firms.</li>
+        <li><strong>System Gateway Sharing:</strong> Information is only shared out of absolute programmatic necessity with our verified infrastructure integrations (Discord API handlers, MongoDB Atlas dataspaces, and Supabase cloud replication nodes).</li>
+    </ul>
+
+    <h2>4. Roster Sanitation & Data Retention Right</h2>
+    <ul>
+        <li><strong>Automated Sanitation Resets:</strong> Roster data structures are dropped, altered, or synchronized instantly following server member departures or scheduled league offseason flushes to optimize database lookup speeds.</li>
+        <li><strong>Right to Complete Erasure:</strong> Any player or server commissioner maintains the right to request a complete physical purge of their tracking documents. To execute a database wipe request, clear the bot's configurations or open an escalation lane with an initiative system administrator.</li>
+    </ul>
+
+    <h2>5. Updates to this Security Protocol</h2>
+    <p>The platform development studio reserves the privilege to optimize these data security boundaries as required by changes in the Discord API platform rules or Roblox gateway structures. Continued operation of the application implies complete, unconditional acceptance of all active safety protocols.</p>
+
+    <div class="footer">
+        <p>© 2026 Oversight Initiative Bot Shop • Secure Cloud Analytics Architecture Core</p>
+    </div>
+</div>
+
+</body>
+</html>
