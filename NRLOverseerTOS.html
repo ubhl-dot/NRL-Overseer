@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | NRL Overseer</title>
+    <style>
+        :root {
+            --bg-main: #0B0E11; /* Midnight Stadium Black */
+            --bg-card: #13171C; /* Command Center Dark Slate */
+            --border-steel: #222B35; /* Steel Gridiron Framing */
+            --text-pure: #FFFFFF;
+            --text-muted: #8A99A8; /* Analytics Slate Gray */
+            
+            /* NRL Theme Core Palette */
+            --nrl-primary: #34495E; /* Gridiron Charcoal */
+            --nrl-green: #2ECC71; /* Turf Green Accent */
+            --nrl-red: #C0392B; /* Disciplinary Penalty Red */
+            --nrl-gold: #D4AF37; /* Marquee Championship Gold */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+            padding: 60px 20px;
+            background-image: 
+                linear-gradient(rgba(46, 204, 113, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(46, 204, 113, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px; /* Subtle field grid overlay effect */
+        }
+
+        .tos-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            padding: 50px;
+            border-radius: 12px;
+            border: 1px solid var(--border-steel);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top Stadium Accent Bar */
+        .tos-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--nrl-primary) 0%, var(--nrl-green) 50%, var(--nrl-gold) 100%);
+        }
+
+        .header-area {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--text-pure);
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(46, 204, 113, 0.1);
+            color: var(--nrl-green);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid rgba(46, 204, 113, 0.2);
+        }
+
+        h2 {
+            color: var(--text-pure);
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '//';
+            color: var(--nrl-green);
+            font-family: monospace;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 0 20px 0;
+        }
+
+        ul {
+            margin: 0 0 25px 0;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 12px;
+            padding-left: 15px;
+        }
+
+        li::before {
+            content: '🏈';
+            position: absolute;
+            left: -10px;
+            top: 2px;
+            font-size: 0.85rem;
+        }
+
+        strong {
+            color: var(--text-pure);
+            font-weight: 600;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: var(--border-steel);
+            margin: 35px 0;
+        }
+
+        /* Callout Box - Elite Showcase Level */
+        .notice-panel {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(19, 23, 28, 0) 100%);
+            border-left: 4px solid var(--nrl-gold);
+            padding: 25px;
+            margin: 35px 0;
+            border-radius: 0 8px 8px 0;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            border-right: 1px solid rgba(212, 175, 55, 0.1);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .notice-panel h3 {
+            margin: 0 0 12px 0;
+            color: var(--nrl-gold);
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .notice-panel ul li::before {
+            content: '⚡';
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-steel);
+            font-size: 0.85rem;
+            color: #526375;
+            font-weight: 500;
+        }
+
+        /* Custom Scrollbar for Premium Feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-main);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-steel);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--nrl-primary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="tos-wrapper">
+    <div class="header-area">
+        <h1>Terms of Service</h1>
+        <div class="badge">NRL Overseer Framework Operating Directive</div>
+    </div>
+
+    <p>Welcome to <strong>NRL Overseer</strong>. By inviting the NRL Overseer bot architecture to your Discord server environment, accessing its designated backend tracking databases, or completing transaction cycles for setup and custom subscription models, you explicitly agree to comply with and be bound by the following operational parameters.</p>
+    
+    <hr>
+
+    <h2>1. Acceptance of Terms & Management Eligibility</h2>
+    <p>By initializing this software framework within an online league node, you confirm that you act as an authorized organizational representative of your server layout (e.g., Owner, Commissioner, or Executive Official) possessing complete clearance to sync data structures. If you object to any structural policy outlined herein, you are strictly unauthorized to operate the bot and must immediately execute a full process shutdown loop.</p>
+
+    <h2>2. Software Provisioning & Virtual Hosting Restrictions</h2>
+    <ul>
+        <li><strong>SaaS Delivery Architecture:</strong> NRL Overseer operates entirely as a centrally maintained Software-as-a-Service (SaaS) application platform. Under no circumstances will software codebases or configuration indexes be delivered to run locally on client machines.</li>
+        <li><strong>Lifecycle Modulations:</strong> The development operations suite retains full clearance to execute runtime patches, schema optimizations, or background adjustments to secure infrastructure health, without extending prior notice to client servers.</li>
+    </ul>
+
+    <h2>3. Commercial Structure, Subscriptions, & Setup Fees</h2>
+    <ul>
+        <li><strong>Tiered Subscription Access:</strong> Deployment of advanced stat-parsing suites, automated division standings telemetry, and interactive command layers is governed by specific recurring multi-tiered service structures.</li>
+        <li><strong>Setup Assets:</strong> Any front-end onboarding configurations or custom data schema modifications carry a <strong>strict non-refundable policy</strong> once technical asset provisioning hooks are pushed live.</li>
+        <li><strong>Billing Enforcement Matrix:</strong> Billing profiles are monitored systematically. Failure to resolve open invoicing indicators will result in the automated locking of active database indices and termination of contract access privileges.</li>
+    </ul>
+
+    <div class="notice-panel">
+        <h3>⚠️ Critical Cost Allocation Notice</h3>
+        <p>NRL Overseer provisions direct processing loops for data-driven, automated media analysis recaps, sports summaries, and league tournament newsletters.</p>
+        <ul>
+            <li><strong>AI Expense Allocation:</strong> Base platform subscription pricing structures <strong>do not cover</strong> raw background artificial intelligence consumption token expenses.</li>
+            <li><strong>Client API Key Obligation:</strong> If a franchise network activates automated AI commentary narrative components, the client must supply, maintain, and fund their own independent credentials (e.g., Gemini API keys). The client assumes total standalone financial liability for all API query usage executed on behalf of their server members.</li>
+        </ul>
+    </div>
+
+    <h2>4. Third-Party API Interlocks & Verification Data</h2>
+    <ul>
+        <li><strong>Profile Sync Mapping:</strong> NRL Overseer relies on external API frameworks (such as the Bloxlink API key verification model) to safely bridge authentic Roblox identities with unique Discord snowflake indicators.</li>
+        <li><strong>Telemetry Compilation:</strong> By maintaining an active database connection, you grant explicit authorization for the systematic storage of public roster sheets, box scores, player metrics, and historical stat records. Sensitive encryption credentials or private passwords are never requested or cached.</li>
+        <li><strong>Automated Sanitation Loops:</strong> The platform preserves the absolute right to clear database lines, drop stale indices, or purge rosters during scheduled offseason cycles to preserve optimal processing speeds on production servers.</li>
+    </ul>
+
+    <h2>5. Limitation of Liability & Service Continuity</h2>
+    <ul>
+        <li><strong>Infrastructural Dependencies:</strong> Because operations rely fundamentally on external gateway uptime (Discord webhooks, Roblox platform access layers, and cloud server backplanes), we accept no liability for scheduling bottlenecks, data freezes, or temporary visualization drops caused by third-party vendor downtime.</li>
+        <li><strong>Data Mirroring Redundancy:</strong> Advanced backup services run continuous database replication sync loops exactly every <strong>15 minutes</strong> to safe mirror storage tiers. We maintain zero liability for extreme database loss patterns exceeding our technical access controls.</li>
+    </ul>
+
+    <div class="footer">
+        <p>© 2026 Oversight Initiative Bot Shop • Secure Cloud Analytics Architecture Core</p>
+    </div>
+</div>
+
+</body>
+</html>
